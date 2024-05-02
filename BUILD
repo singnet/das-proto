@@ -1,6 +1,14 @@
+http_archive(
+    name = "com_github_grpc_grpc",
+    strip_prefix = "grpc-tags-v1.63.0",
+    urls = [
+        "https://github.com/grpc/grpc/archive/tags/v1.63.0.tar.gz",
+    ],
+)
+
 load("@rules_cc//cc:defs.bzl", "cc_proto_library")
 load("@rules_proto//proto:defs.bzl", "proto_library")
-load("//bazel:cc_grpc_library.bzl", "cc_grpc_library")
+load("@com_github_grpc_grpc//bazel:cc_grpc_library.bzl", "cc_grpc_library")
 
 cc_grpc_library(
     name = "attention_broker_cc_grpc",
