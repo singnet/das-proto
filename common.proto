@@ -10,8 +10,10 @@ message Ack {
 
 message HandleList {
     repeated string handle_list = 1;
+    string context = 2;
 }
 
 message HandleCount {
     map<string, uint32> handle_count = 1;
+    string context = 2;
 }
