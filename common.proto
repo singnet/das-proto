@@ -10,10 +10,14 @@ message Ack {
 
 message HandleList {
     repeated string handle_list = 1;
-    string context = 2;
+    int32 request_type = 2;
+    int64 hebbian_network = 3;
+    string context = 4;
 }
 
 message HandleCount {
     map<string, uint32> handle_count = 1;
-    string context = 2;
+    int32 request_type = 2;
+    int64 hebbian_network = 3;
+    string context = 4;
 }
