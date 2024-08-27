@@ -6,5 +6,4 @@ service AttentionBroker {
     rpc ping (Empty) returns (Ack) {}
     rpc stimulate (HandleCount) returns (Ack) {}
     rpc correlate (HandleList) returns (Ack) {}
-    rpc fetch (HandleList) returns (Ack) {}
 }
