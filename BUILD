@@ -11,6 +11,14 @@ cc_grpc_library(
 )
 
 cc_grpc_library(
+    name = "cache_network_cc_grpc",
+    srcs = [":cache_network_proto"],
+    grpc_only = True,
+    deps = [":cache_network_cc_proto"],
+    visibility = ["//visibility:public"],
+)
+
+cc_grpc_library(
     name = "common_cc_grpc",
     srcs = [":common_proto"],
     grpc_only = True,
@@ -25,6 +33,12 @@ cc_proto_library(
 )
 
 cc_proto_library(
+    name = "cache_network_cc_proto",
+    deps = [":cache_network_proto"],
+    visibility = ["//visibility:public"],
+)
+
+cc_proto_library(
     name = "common_cc_proto",
     deps = [":common_proto"],
     visibility = ["//visibility:public"],
@@ -32,6 +46,13 @@ cc_proto_library(
 
 proto_library(
     name = "attention_broker_proto",
+    srcs = ["attention_broker.proto"],
+    deps = [":common_proto"],
+    visibility = ["//visibility:public"],
+)
+
+proto_library(
+    name = "cache_network_proto",
     srcs = ["attention_broker.proto"],
     deps = [":common_proto"],
     visibility = ["//visibility:public"],
