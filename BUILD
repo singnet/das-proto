@@ -53,7 +53,7 @@ proto_library(
 
 proto_library(
     name = "cache_network_proto",
-    srcs = ["attention_broker.proto"],
+    srcs = ["cache_network.proto"],
     deps = [":common_proto"],
     visibility = ["//visibility:public"],
 )
