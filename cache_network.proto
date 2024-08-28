@@ -11,5 +11,5 @@ message MessageData {
 
 service CacheNetwork {
     rpc ping (Empty) returns (Ack) {}
-    rpc execute_message (MessageData) returns (Ack) {}
+    rpc execute_message (MessageData) returns (Empty) {}
 }
