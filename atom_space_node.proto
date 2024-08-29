@@ -6,10 +6,11 @@ message MessageData {
     string command = 1;
     repeated string args = 2;
     string sender = 3;
-    string receiver = 4;
+    bool is_broadcast = 4;
+    repeated string visited_recipients = 5;
 }
 
-service CacheNetwork {
+service AtomSpaceNode {
     rpc ping (Empty) returns (Ack) {}
     rpc execute_message (MessageData) returns (Empty) {}
 }
