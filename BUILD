@@ -11,10 +11,10 @@ cc_grpc_library(
 )
 
 cc_grpc_library(
-    name = "cache_network_cc_grpc",
-    srcs = [":cache_network_proto"],
+    name = "atom_space_node_cc_grpc",
+    srcs = [":atom_space_node_proto"],
     grpc_only = True,
-    deps = [":cache_network_cc_proto"],
+    deps = [":atom_space_node_cc_proto"],
     visibility = ["//visibility:public"],
 )
 
@@ -33,8 +33,8 @@ cc_proto_library(
 )
 
 cc_proto_library(
-    name = "cache_network_cc_proto",
-    deps = [":cache_network_proto"],
+    name = "atom_space_node_cc_proto",
+    deps = [":atom_space_node_proto"],
     visibility = ["//visibility:public"],
 )
 
@@ -52,8 +52,8 @@ proto_library(
 )
 
 proto_library(
-    name = "cache_network_proto",
-    srcs = ["cache_network.proto"],
+    name = "atom_space_node_proto",
+    srcs = ["atom_space_node.proto"],
     deps = [":common_proto"],
     visibility = ["//visibility:public"],
 )
