@@ -1,6 +1,6 @@
 syntax = "proto3";
 import "common.proto";
-package das;
+package dasproto;
 
 service AttentionBroker {
     rpc ping (Empty) returns (Ack) {}

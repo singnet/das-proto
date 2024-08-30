@@ -1,5 +1,5 @@
 syntax = "proto3";
-package das;
+package dasproto;
 
 message Empty {}
 

@@ -1,6 +1,6 @@
 syntax = "proto3";
 import "common.proto";
-package das;
+package dasproto;
 
 message MessageData {
     string command = 1;
