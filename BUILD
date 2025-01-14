@@ -1,11 +1,3 @@
-#load("@rules_cc//cc:defs.bzl", "cc_proto_library")
-#load("@rules_proto//proto:defs.bzl", "proto_library")
-
-#load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
-#grpc_deps()
-#load("@com_github_grpc_grpc//bazel:grpc_extra_deps.bzl", "grpc_extra_deps")
-#grpc_extra_deps()
-
 load("@com_github_grpc_grpc//bazel:cc_grpc_library.bzl", "cc_grpc_library")
 
 package(default_visibility = ["//visibility:public"])
