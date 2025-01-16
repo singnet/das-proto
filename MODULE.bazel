@@ -6,7 +6,7 @@ dependencies of the dependencies, such as `rules_go`, `googleapis`, and `protoc-
 This is required basically to set alternative names (`repo_name`) used internally by some packages,
 such as `grpc`, which is in a transitory state (from WORKSPACE to MODULE.bazel).
 Hopefully, this will be fixed by the end of 2025.
-""""
+"""
 
 module(name = "das-proto")
 bazel_dep(name = "abseil-cpp", version = "20240722.0", repo_name = "com_google_absl")
