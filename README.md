@@ -9,7 +9,8 @@ bazelisk build //:all
 ### Check
 Check the results:
 ```bash
-> ls -1 bazel-bin/*.(h|cc)
+ls -1 bazel-bin/*.(h|cc)
+
 bazel-bin/atom_space_node.grpc.pb.cc
 bazel-bin/atom_space_node.grpc.pb.h
 bazel-bin/atom_space_node.pb.cc
