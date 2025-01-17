@@ -5,7 +5,7 @@ It includes project's dependencies such as `grpc`, but also lists some
 dependencies of the dependencies, such as `rules_go`, `googleapis`, and `protoc-gen-validate`, among others.
 This is required basically to set alternative names (`repo_name`) used internally by some packages,
 such as `grpc`, which is in a transitory state (from WORKSPACE to MODULE.bazel).
-Hopefully, this will be fixed by the end of 2025.
+Hopefully, this will be fixed by the end of 2025 and it'll be possible to list only the `grpc` package.
 """
 
 module(name = "das-proto")
