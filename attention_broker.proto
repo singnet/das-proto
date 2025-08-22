@@ -9,6 +9,13 @@ message HandleList {
     string context = 4;
 }
 
+message HandleListList {
+    repeated HandleList list = 1;
+    int32 request_type = 2;
+    int64 hebbian_network = 3;
+    string context = 4;
+}
+
 message HandleCount {
     map<string, uint32> map = 1;
     int32 request_type = 2;
@@ -25,4 +32,5 @@ service AttentionBroker {
     rpc stimulate (HandleCount) returns (Ack) {}
     rpc correlate (HandleList) returns (Ack) {}
     rpc get_importance (HandleList) returns (ImportanceList) {}
+    rpc set_determiners (HandleListList) returns (Ack) {}
 }
