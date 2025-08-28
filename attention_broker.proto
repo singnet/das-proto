@@ -27,10 +27,17 @@ message ImportanceList {
     repeated float list = 1;
 }
 
+message Parameters {
+    float rent_rate = 1;
+    float spreading_rate_lowerbound = 2;
+    float spreading_rate_upperbound = 3;
+}
+
 service AttentionBroker {
     rpc ping (Empty) returns (Ack) {}
     rpc stimulate (HandleCount) returns (Ack) {}
     rpc correlate (HandleList) returns (Ack) {}
     rpc get_importance (HandleList) returns (ImportanceList) {}
     rpc set_determiners (HandleListList) returns (Ack) {}
+    rpc set_parameters (Parameters) returns (Ack) {}
 }
