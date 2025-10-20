@@ -33,6 +33,11 @@ message Parameters {
     float spreading_rate_upperbound = 3;
 }
 
+message ContextPersistence {
+    string context = 1;
+    string file_name = 2;
+}
+
 service AttentionBroker {
     rpc ping (Empty) returns (Ack) {}
     rpc stimulate (HandleCount) returns (Ack) {}
@@ -41,4 +46,6 @@ service AttentionBroker {
     rpc get_importance (HandleList) returns (ImportanceList) {}
     rpc set_determiners (HandleListList) returns (Ack) {}
     rpc set_parameters (Parameters) returns (Ack) {}
+    rpc save_context (ContextPersistence) returns (Ack) {}
+    rpc drop_and_load_context (ContextPersistence) returns (Ack) {}
 }
