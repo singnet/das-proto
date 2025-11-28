@@ -10,7 +10,7 @@ message MessageData {
     repeated string visited_recipients = 5;
 }
 
-service AtomSpaceNode {
+service DistributedAlgorithmNode {
     rpc ping (Empty) returns (Ack) {}
     rpc execute_message (MessageData) returns (Empty) {}
 }
