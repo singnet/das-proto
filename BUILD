@@ -9,11 +9,11 @@ cc_grpc_library(
 )
 
 cc_grpc_library(
-    name = "atom_space_node_cc_grpc",
-    srcs = [":atom_space_node_proto"],
+    name = "distributed_algorithm_node_cc_grpc",
+    srcs = [":distributed_algorithm_node_proto"],
     grpc_only = True,
     visibility = ["//visibility:public"],
-    deps = [":atom_space_node_cc_proto"],
+    deps = [":distributed_algorithm_node_cc_proto"],
 )
 
 cc_grpc_library(
@@ -31,9 +31,9 @@ cc_proto_library(
 )
 
 cc_proto_library(
-    name = "atom_space_node_cc_proto",
+    name = "distributed_algorithm_node_cc_proto",
     visibility = ["//visibility:public"],
-    deps = [":atom_space_node_proto"],
+    deps = [":distributed_algorithm_node_proto"],
 )
 
 cc_proto_library(
@@ -50,8 +50,8 @@ proto_library(
 )
 
 proto_library(
-    name = "atom_space_node_proto",
-    srcs = ["atom_space_node.proto"],
+    name = "distributed_algorithm_node_proto",
+    srcs = ["distributed_algorithm_node.proto"],
     visibility = ["//visibility:public"],
     deps = [":common_proto"],
 )
