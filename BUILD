@@ -9,7 +9,6 @@ cc_grpc_library(
     grpc_only = True,
     deps = [":attention_broker_cc_proto"],
     copts = [
-        "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
         "-Wno-unused-function",
     ],
@@ -21,7 +20,6 @@ cc_grpc_library(
     grpc_only = True,
     deps = [":distributed_algorithm_node_cc_proto"],
     copts = [
-        "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
         "-Wno-unused-function",
     ],
@@ -33,7 +31,6 @@ cc_grpc_library(
     grpc_only = True,
     deps = [":common_cc_proto"],
     copts = [
-        "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
         "-Wno-unused-function",
     ],
@@ -46,7 +43,6 @@ cc_proto_library(
         ":common_cc_proto"
     ],
     copts = [
-        "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
         "-Wno-unused-function",
     ],
@@ -59,7 +55,6 @@ cc_proto_library(
         ":common_cc_proto"
     ],
     copts = [
-        "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
         "-Wno-unused-function",
     ],
@@ -69,7 +64,6 @@ cc_proto_library(
     name = "common_cc_proto",
     protos = [":common_proto"],
     copts = [
-        "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
         "-Wno-unused-function",
     ],
