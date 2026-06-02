@@ -44,7 +44,7 @@ cc_proto_library(
     protos = [":attention_broker_proto"],
     deps = [
         ":common_cc_proto"
-    ]
+    ],
     copts = [
         "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
@@ -57,7 +57,7 @@ cc_proto_library(
     protos = [":distributed_algorithm_node_proto"],
     deps = [
         ":common_cc_proto"
-    ]
+    ],
     copts = [
         "-Wno-unused-parameter",
         "-Wno-deprecated-declarations",
