@@ -79,40 +79,20 @@ proto_library(
     name = "attention_broker_proto",
     srcs = ["attention_broker.proto"],
     deps = [":common_proto"],
-    copts = [
-        "-Wno-unused-parameter",
-        "-Wno-deprecated-declarations",
-        "-Wno-unused-function",
-    ],
 )
 
 proto_library(
     name = "distributed_algorithm_node_proto",
     srcs = ["distributed_algorithm_node.proto"],
     deps = [":common_proto"],
-    copts = [
-        "-Wno-unused-parameter",
-        "-Wno-deprecated-declarations",
-        "-Wno-unused-function",
-    ],
 )
 
 proto_library(
     name = "common_proto",
     srcs = ["common.proto"],
-    copts = [
-        "-Wno-unused-parameter",
-        "-Wno-deprecated-declarations",
-        "-Wno-unused-function",
-    ],
 )
 
 proto_library(
     name = "echo_proto",
     srcs = ["echo.proto"],
-    copts = [
-        "-Wno-unused-parameter",
-        "-Wno-deprecated-declarations",
-        "-Wno-unused-function",
-    ],
 )
