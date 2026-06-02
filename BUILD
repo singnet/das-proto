@@ -8,6 +8,11 @@ cc_grpc_library(
     protos = [":attention_broker_proto"],
     grpc_only = True,
     deps = [":attention_broker_cc_proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 cc_grpc_library(
@@ -15,6 +20,11 @@ cc_grpc_library(
     protos = [":distributed_algorithm_node_proto"],
     grpc_only = True,
     deps = [":distributed_algorithm_node_cc_proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 cc_grpc_library(
@@ -22,6 +32,11 @@ cc_grpc_library(
     protos = [":common_proto"],
     grpc_only = True,
     deps = [":common_cc_proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 cc_proto_library(
@@ -30,6 +45,11 @@ cc_proto_library(
     deps = [
         ":common_cc_proto"
     ]
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 cc_proto_library(
@@ -38,31 +58,61 @@ cc_proto_library(
     deps = [
         ":common_cc_proto"
     ]
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 cc_proto_library(
     name = "common_cc_proto",
     protos = [":common_proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 proto_library(
     name = "attention_broker_proto",
     srcs = ["attention_broker.proto"],
     deps = [":common_proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 proto_library(
     name = "distributed_algorithm_node_proto",
     srcs = ["distributed_algorithm_node.proto"],
     deps = [":common_proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 proto_library(
     name = "common_proto",
     srcs = ["common.proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
 
 proto_library(
     name = "echo_proto",
     srcs = ["echo.proto"],
+    copts = [
+        "-Wno-unused-parameter",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+    ],
 )
