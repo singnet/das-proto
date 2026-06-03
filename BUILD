@@ -11,6 +11,7 @@ cc_grpc_library(
     copts = [
         "-w",
         "-Wno-all",
+        "-isystem", ".",
     ],
 )
 
@@ -22,6 +23,7 @@ cc_grpc_library(
     copts = [
         "-w",
         "-Wno-all",
+        "-isystem", ".",
     ],
 )
 
@@ -33,6 +35,7 @@ cc_grpc_library(
     copts = [
         "-w",
         "-Wno-all",
+        "-isystem", ".",
     ],
 )
 
@@ -45,6 +48,7 @@ cc_proto_library(
     copts = [
         "-w",
         "-Wno-all",
+        "-isystem", ".",
     ],
 )
 
@@ -57,6 +61,7 @@ cc_proto_library(
     copts = [
         "-w",
         "-Wno-all",
+        "-isystem", ".",
     ],
 )
 
@@ -66,6 +71,7 @@ cc_proto_library(
     copts = [
         "-w",
         "-Wno-all",
+        "-isystem", ".",
     ],
 )
 
